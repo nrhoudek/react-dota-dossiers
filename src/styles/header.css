@@ -1,0 +1,73 @@
+.page-header {
+  padding: var(--space-16);
+}
+
+.page-header > .inner {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-8) var(--space-12);
+  background-color: var(--dire);
+  border-radius: 16px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.page-title {
+  font-size: 1.75rem;
+  letter-spacing: 0.1em;
+  color: var(--black);
+  text-shadow: 2px 2px 2px rgba(200, 200, 200, 0.3);
+  text-align: center;
+}
+
+.page-header .logo {
+  width: 80px;
+  height: 80px;
+  aspect-ratio: 1/1;
+}
+
+@media (min-width: 25em) {
+  .page-header > .inner {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: var(--space-8) 0 var(--space-8) var(--space-12);
+  }
+}
+
+@media (min-width: 40em) {
+  .page-header {
+    padding: var(--space-16) var(--space-32);
+  }
+
+  .page-header > .inner {
+    gap: var(--space-16);
+    padding: var(--space-8) 0 var(--space-8) var(--space-16);
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .page-header {
+    padding: var(--space-32);
+  }
+
+  .page-header > .inner {
+    padding: var(--space-4) var(--space-8) var(--space-4) var(--space-20);
+  }
+
+  .page-title {
+    font-size: 3rem;
+  }
+
+  .page-header .logo {
+    width: 100px;
+    height: 100px;
+  }
+}

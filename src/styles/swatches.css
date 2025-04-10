@@ -1,0 +1,39 @@
+:root {
+  /* Font Families */
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Merriweather', serif;
+
+  /* Colors */
+  --white: white;
+  --black: black;
+  --radiant: #66ff99;
+  --dire: #a11f1f;
+
+  /* Box-Shadows */
+  --radiant-shadow: 0 0 10px rgba(102, 255, 153, 0.6), 0 0 20px rgba(102, 255, 153, 0.4), 0 0 30px rgba(102, 255, 153, 0.2);
+  --dire-shadow: box-shadow: 0 0 10px rgba(161, 31, 31, 0.6),
+  0 0 20px rgba(161, 31, 31, 0.4),
+  0 0 30px rgba(161, 31, 31, 0.2);
+
+  /* Spacing */
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-20: 1.25rem;
+  --space-24: 1.5rem;
+  --space-28: 1.75rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-48: 3rem;
+  --space-64: 4rem;
+
+  /* Transitions */
+  --transition-appendix: 0.3s ease;
+
+  /* Blur */
+  --blur-light: blur(20px);
+  --blur-medium: blur(40px);
+  --blur-heavy: blur(80px);
+  --blur-complete: blur(400px);
+}

@@ -1,0 +1,39 @@
+.root-layout {
+  padding: var(--space-32);
+}
+
+.root-form {
+  max-width: 1440px;
+  padding: 0 var(--space-20);
+  margin: 0 auto var(--space-32);
+}
+
+.root-form > .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-20);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.root-form #query {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: var(--space-8) var(--space-12);
+}
+
+.root-form #query::placeholder {
+  opacity: 1;
+}
+
+.root-layout-grid {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
+  padding: 0 var(--space-20);
+  gap: var(--space-16);
+  margin: 0 auto;
+}

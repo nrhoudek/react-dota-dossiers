@@ -1,0 +1,23 @@
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-16);
+  padding: var(--space-20);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: box-shadow var(--transition-appendix);
+}
+
+.hero-name {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (hover: hover) {
+  .hero-card:hover {
+    box-shadow: var(--radiant-shadow);
+  }
+}
