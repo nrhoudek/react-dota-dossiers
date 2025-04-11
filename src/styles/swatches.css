@@ -6,14 +6,23 @@
   /* Colors */
   --white: white;
   --black: black;
+  --gray: #a1a1a1;
   --radiant: #66ff99;
   --dire: #a11f1f;
+  --str: #c03030;
+  --agi: #30c030;
+  --int: #3399ff;
+  --uni: #b5a5c5;
 
   /* Box-Shadows */
   --radiant-shadow: 0 0 10px rgba(102, 255, 153, 0.6), 0 0 20px rgba(102, 255, 153, 0.4), 0 0 30px rgba(102, 255, 153, 0.2);
   --dire-shadow: box-shadow: 0 0 10px rgba(161, 31, 31, 0.6),
   0 0 20px rgba(161, 31, 31, 0.4),
   0 0 30px rgba(161, 31, 31, 0.2);
+  --str-shadow:0 0 10px rgba(192, 48, 48, 0.6), 0 0 20px rgba(192, 48, 48, 0.4), 0 0 30px rgba(192, 48, 48, 0.2);
+  --agi-shadow: 0 0 10px rgba(48, 192, 48, 0.6), 0 0 20px rgba(48, 192, 48, 0.4), 0 0 30px rgba(48, 192, 48, 0.2);
+  --int-shadow: 0 0 10px rgba(51, 153, 255, 0.6), 0 0 20px rgba(51, 153, 255, 0.4), 0 0 30px rgba(51, 153, 255, 0.2);
+  --uni-shadow: 0 0 10px rgba(181, 165, 197, 0.6), 0 0 20px rgba(181, 165, 197, 0.4), 0 0 30px rgba(181, 165, 197, 0.2);
 
   /* Spacing */
   --space-4: 0.25rem;
@@ -36,4 +45,14 @@
   --blur-medium: blur(40px);
   --blur-heavy: blur(80px);
   --blur-complete: blur(400px);
+
+  --color-bg: var(--white);
+  --color: var(--black);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #333;
+    --color: var(--white);
+  }
 }

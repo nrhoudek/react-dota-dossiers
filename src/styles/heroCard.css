@@ -6,8 +6,20 @@
   gap: var(--space-16);
   padding: var(--space-20);
   border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--uni);
   transition: box-shadow var(--transition-appendix);
+}
+
+.hero-card.str {
+  border: 1px solid var(--str);
+}
+
+.hero-card.agi {
+  border: 1px solid var(--agi);
+}
+
+.hero-card.int {
+  border: 1px solid var(--int);
 }
 
 .hero-name {
@@ -18,6 +30,18 @@
 
 @media (hover: hover) {
   .hero-card:hover {
-    box-shadow: var(--radiant-shadow);
+    box-shadow: var(--uni-shadow);
+  }
+
+  .hero-card.str:hover {
+    box-shadow: var(--str-shadow);
+  }
+
+  .hero-card.agi:hover {
+    box-shadow: var(--agi-shadow);
+  }
+
+  .hero-card.int:hover {
+    box-shadow: var(--int-shadow);
   }
 }

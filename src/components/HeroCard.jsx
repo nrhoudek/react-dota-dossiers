@@ -2,10 +2,10 @@ import '../styles/heroCard.css'
 
 const ICON_BASE_URL = `https://cdn.cloudflare.steamstatic.com`
 
-export function HeroCard({ icon, name }) {
+export function HeroCard({ icon, name, primaryAttr }) {
   const iconPath = `${ICON_BASE_URL}${icon}`
   return (
-    <article className='hero-card'>
+    <article className={`hero-card ${primaryAttr}`}>
       <img
         src={iconPath}
         alt=''

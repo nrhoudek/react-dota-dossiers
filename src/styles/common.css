@@ -9,6 +9,10 @@
   font-family: var(--font-body);
 }
 
+html {
+  color-scheme: dark-light;
+}
+
 h1,
 h2,
 h3,
@@ -17,4 +21,11 @@ h5,
 h6 {
   font-family: var(--font-display);
   font-weight: 700;
+}
+
+input:focus,
+input:focus-visible {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: var(--dire);
 }
