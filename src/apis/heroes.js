@@ -7,7 +7,7 @@ export async function getHeroes(options) {
     }
 
     const data = await res.json()
-    console.log('Fetched Data', data)
+    // console.log('Fetched Data', data)
     return data
   } catch (err) {
     console.error('Error Fetching Data:', err)

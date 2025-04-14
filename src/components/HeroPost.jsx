@@ -3,6 +3,7 @@ import { getHero } from '../apis/heroes'
 import { HeroStat } from './HeroStat'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faCircle } from '@fortawesome/free-solid-svg-icons'
+import { ThemeToggle } from './ThemeToggle'
 import '../styles/heroPost.css'
 
 const IMAGE_BASE_URL = `https://cdn.cloudflare.steamstatic.com`
@@ -37,16 +38,18 @@ function HeroPost() {
     int_gain,
   } = hero
   const heroImagePath = `${IMAGE_BASE_URL}${img}`
-  console.log(hero)
   return (
-    <div className={`${primary_attr} hero-post-container`}>
-      <Link
-        to='..'
-        className='back-btn'
-      >
-        <FontAwesomeIcon icon={faArrowLeft} />
-        <span>Back</span>
-      </Link>
+    <main className={`${primary_attr} hero-post-container`}>
+      <div className='back-theme-container'>
+        <Link
+          to='..'
+          className='back-btn'
+        >
+          <FontAwesomeIcon icon={faArrowLeft} />
+          <span>Back</span>
+        </Link>
+        <ThemeToggle />
+      </div>
       <div className='hero-intro'>
         <h2 className='hero-name'>{localized_name}</h2>
         <span className='roles'>{roles.join(' | ')}</span>
@@ -135,7 +138,7 @@ function HeroPost() {
           />
         </ul>
       </div>
-    </div>
+    </main>
   )
 }
 

@@ -1,0 +1,47 @@
+.light-dark-toggle-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+  width: 60px;
+  background-color: var(--sunlight-bg);
+  padding: 6px var(--space-8);
+  border: 1px solid var(--gray);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color var(--transition-appendix);
+}
+
+.light-dark-toggle-button.active {
+  background-color: var(--moonlight-bg);
+}
+
+.light-dark-toggle-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 100%;
+  translate: 0 -50%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--gray);
+  background-color: var(--bg-color);
+  border-radius: 9999px;
+  pointer-events: none;
+  transition: translate var(--transition-appendix);
+}
+
+.light-dark-toggle-button.active::after {
+  translate: 35px -50%;
+}
+
+.light-dark-toggle-button .sun {
+  color: var(--sunlight);
+  pointer-events: none;
+}
+
+.light-dark-toggle-button .moon {
+  color: var(--moonlight);
+  pointer-events: none;
+}

@@ -4,6 +4,11 @@
   margin: 0 auto;
 }
 
+.hero-post-container .back-theme-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hero-post-container .back-btn {
   display: inline-flex;
   justify-content: flex-start;
@@ -35,6 +40,7 @@
 }
 
 .hero-post-container .hero-portrait {
+  aspect-ratio: 16 / 9;
   max-width: 320px;
   display: block;
   width: 100%;
@@ -126,8 +132,20 @@
 }
 
 @media (hover: hover) {
-  .hero-post-container .back-btn:hover {
-    background-color: var(--dire);
+  .hero-post-container.str .back-btn:hover {
+    background-color: var(--str-faded);
+  }
+
+  .hero-post-container.agi .back-btn:hover {
+    background-color: var(--agi-faded);
+  }
+
+  .hero-post-container.int .back-btn:hover {
+    background-color: var(--int-faded);
+  }
+
+  .hero-post-container.all .back-btn:hover {
+    background-color: var(--uni-faded);
   }
 }
 

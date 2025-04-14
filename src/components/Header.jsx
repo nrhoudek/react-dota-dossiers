@@ -1,6 +1,5 @@
 import '../styles/header.css'
 import dotaLogoDark from '../assets/dota2-logo-dark.png'
-import dotaLogoLight from '../assets/dota2-logo-light.png'
 
 export function Header() {
   return (

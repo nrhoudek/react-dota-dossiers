@@ -9,6 +9,13 @@
   font-family: var(--font-body);
 }
 
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
 html {
   color-scheme: dark light;
 }
@@ -16,6 +23,16 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--font-color);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+#root > main {
+  flex-grow: 1;
+  width: 100%;
 }
 
 h1,
@@ -26,6 +43,10 @@ h5,
 h6 {
   font-family: var(--font-display);
   font-weight: 700;
+}
+
+a {
+  transition: all var(--transition-appendix);
 }
 
 input:focus,
