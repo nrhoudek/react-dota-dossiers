@@ -33,7 +33,7 @@
 }
 
 .light-dark-toggle-button.active::after {
-  translate: 35px -50%;
+  translate: 34px -50%;
 }
 
 .light-dark-toggle-button .sun {

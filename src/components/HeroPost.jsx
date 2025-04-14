@@ -86,7 +86,7 @@ function HeroPost() {
         <ul className='stats'>
           <HeroStat
             statName={'Primary Attribute: '}
-            statValue={primary_attr}
+            statValue={primary_attr.toUpperCase()}
           />
           <HeroStat
             statName={'Base Health: '}
