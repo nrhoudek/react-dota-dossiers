@@ -55,7 +55,7 @@ footer p a {
   color: var(--font-color);
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   footer {
     padding: var(--space-32);
   }

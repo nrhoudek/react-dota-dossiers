@@ -1,7 +1,8 @@
-import { createBrowserRouter, Navigate, useRouteError } from 'react-router'
+import { createBrowserRouter, Navigate } from 'react-router'
 import { RootLayout } from './layouts/RootLayout'
 import { heroListRoute } from './components/HeroList'
 import { heroPostRoute } from './components/HeroPost'
+import { ErrorPage } from './components/ErrorPage'
 
 export const router = createBrowserRouter([
   {
@@ -22,24 +23,12 @@ export const router = createBrowserRouter([
               { path: ':heroId', ...heroPostRoute },
             ],
           },
+          {
+            path: '*',
+            element: <ErrorPage />,
+          },
         ],
       },
     ],
   },
 ])
-
-function ErrorPage() {
-  const error = useRouteError()
-
-  return (
-    <>
-      <h1>Error - Something went wrong</h1>
-      {import.meta.env.MODE !== 'production' && (
-        <>
-          <pre>{error.message}</pre>
-          <pre>{error.stack}</pre>
-        </>
-      )}
-    </>
-  )
-}
