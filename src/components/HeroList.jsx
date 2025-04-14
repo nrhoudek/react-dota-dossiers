@@ -41,6 +41,7 @@ function HeroList() {
         {filteredHeroList.map(hero => (
           <HeroCard
             key={hero.id}
+            id={hero.id}
             icon={hero.icon}
             name={hero.localized_name}
             primaryAttr={hero.primary_attr}

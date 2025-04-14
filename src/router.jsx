@@ -1,6 +1,7 @@
 import { createBrowserRouter, Navigate, useRouteError } from 'react-router'
 import { RootLayout } from './layouts/RootLayout'
 import { heroListRoute } from './components/HeroList'
+import { heroPostRoute } from './components/HeroPost'
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +17,10 @@ export const router = createBrowserRouter([
           },
           {
             path: 'heroes',
-            ...heroListRoute,
+            children: [
+              { index: true, ...heroListRoute },
+              { path: ':heroId', ...heroPostRoute },
+            ],
           },
         ],
       },

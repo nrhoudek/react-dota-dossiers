@@ -6,13 +6,23 @@
   /* Colors */
   --white: white;
   --black: black;
+  --slate-black: #222222;
   --gray: #a1a1a1;
   --radiant: #66ff99;
   --dire: #a11f1f;
   --str: #c03030;
+  --str-faded: rgba(192, 48, 48, 0.25);
   --agi: #30c030;
+  --agi-faded: rgba(48, 192, 48, 0.25);
   --int: #3399ff;
+  --int-faded: rgba(51, 153, 255, 0.25);
   --uni: #b5a5c5;
+  --uni-faded: rgba(181, 165, 197, 0.25);
+  --sunlight: #ffd700;
+  --sunlight-bg: #fff8dc;
+  --moonlight: #191970;
+  --moonlight-bg: #c0c0c0;
+
 
   /* Box-Shadows */
   --radiant-shadow: 0 0 10px rgba(102, 255, 153, 0.6), 0 0 20px rgba(102, 255, 153, 0.4), 0 0 30px rgba(102, 255, 153, 0.2);
@@ -48,11 +58,34 @@
 
   --color-bg: var(--white);
   --color: var(--black);
+
+  /* Theme - Light */
+  --font-color: var(--black);
+  --bg-color: var(--white);
+  --header-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #333;
-    --color: var(--white);
+    /* Theme - Dark */
+    --font-color: var(--white);
+    --bg-color: var(--slate-black);
+    --header-box-shadow: 0 4px 8px rgba(100, 100, 100, 0.3), 0 2px 4px rgba(100, 100, 100, 0.25);
   }
+}
+
+body:not(.dark-mode) {
+  color-scheme: light;
+  --font-color: var(--black);
+  --bg-color: var(--white);
+  --header-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.25);
+  transition: all var(--transition-appendix);
+}
+
+body.dark-mode {
+  color-scheme: dark;
+  --font-color: var(--white);
+  --bg-color: var(--slate-black);
+  --header-box-shadow: 0 4px 8px rgba(100, 100, 100, 0.3), 0 2px 4px rgba(100, 100, 100, 0.25);
+  transition: all var(--transition-appendix);
 }

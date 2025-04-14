@@ -3,11 +3,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: var(--space-16);
-  padding: var(--space-20);
   border-radius: 8px;
   border: 1px solid var(--uni);
   transition: box-shadow var(--transition-appendix);
+}
+
+.hero-card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: var(--space-16);
+  color: var(--text-color);
+  text-decoration: none;
+  padding: var(--space-20);
 }
 
 .hero-card.str {

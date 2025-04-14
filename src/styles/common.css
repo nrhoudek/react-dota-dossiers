@@ -10,7 +10,12 @@
 }
 
 html {
-  color-scheme: dark-light;
+  color-scheme: dark light;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
 h1,
